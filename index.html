@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <div class="header-container">
+          <img src="./img/DSK_logo.svg" alt="">
+          <input type="text" class="search-input" placeholder="Поиск по каталогу...">
+          <img src="./img/search.png" alt="">
+          <img src="./img/menu_open.png" alt="">
+  </div>
+</header>
+      
+  <!--Start of Menubar-->
+      <div class="menu">
+        <!-- Menu item 1 -->
+        <div class="menu-item">
+          <div class="bullet1">&#9679;</div>
+          Главная
+        </div>
+        <!-- Menu item 2 -->
+        <div class="menu-item">
+          <div class="bullet1">&#9679;</div>
+          Каталог товаров
+        </div>
+        <!-- Menu item 3 -->
+        <div class="menu-item">
+          <div class="bullet1">&#9679;</div>
+          Частное домостроение
+        </div>
+        <!-- Menu item 4 -->
+        <div class="menu-item">
+          <div class="bullet1">&#9679;</div>
+          Плиты перекрытия
+        </div>
+        <!-- Menu item 5 -->
+        <div class="menu-item">
+          <div class="bullet1">&#9679;</div>
+          Плиты ПК
+        </div>
+        <!-- Menu item 6 -->
+        <div class="menu-item selected">
+          <div class="bullet1">&#9679;</div>
+          Пк 63-12-8
+        </div>
+      </div>
+    <!--End of Menubar-->
+    
+    <!--Start of H1-->
+    <h1 id="header">Пк 63-12-8</h1>
+    <div class="evaluation">
+      <img src="./img/Vector.png" alt="">
+      <img src="./img/Vector.png" alt="">
+      <img src="./img/Vector.png" alt="">
+      <img src="./img/Vector (1).png" alt="">
+      <img src="./img/Vector (2).png" alt="">
+    </div>
+    <!--End of H1-->
+
+    <!--Start of smaller menu-->
+    <div class="container">
+      <div class="menu2">
+        <a href="#" class="selected2">ВСЕ О ТОВАРЕ</a>
+        <a href="#">ХАРАКТЕРИСТИКИ</a>
+        <a href="#">ОБЗОР</a>
+      </div>
+    <!--End of smaller menu-->
+
+<!--Start of non-functional slider-->
+<div class="slider">
+  <div class="slides">
+    <div class="slide">
+      <img src="./img/img.png">
+    </div>
+    <div class="slide">
+      <img src="./img/img.png">
+    </div>
+    <div class="slide">
+      <img src="./img/img.png">
+    </div>
+  </div>
+  <div class="bullet-container">
+    <div class="bullets">
+      <div class="bullet selected3"></div>
+      <div class="bullet"></div>
+      <div class="bullet"></div>
+      <div class="bullet"></div>
+      <div class="bullet"></div>
+    </div>
+  </div>
+</div>
+<!--End of non-functional slider-->
+
+<!--Start of text-->
+<div class="description">
+  <h1>Характеристики</h1>
+  <p>Наименование: <span>Плиты ПК</span></p>
+  <p>Завод-производитель: <span>Москва и МО</span></p>
+  <p>Технические условия: <span>ГОСТ 9561-91</span></p>
+  <p>Длина,мм: <span>6300</span></p>
+  <p>Ширина,мм: <span>1200</span></p>
+  <p>Высота,мм: <span>220</span></p>
+  <p>Расчетная нагрузк,кг/м2: <span>800</span></p>
+  <p>Вес 1шт.,т: <span>1,755</span></p>
+</div>
+<!--End of text-->
+
+
+<!--Start of the box-->
+<div class="square-container">
+  <div class="price-article">
+    <p class="price">484,00 ₽/шт.</p>
+    <p class="price-cl">154,88 ₽/м²</p>
+    <p class="article">Артикул: <span>0543600</span> </p>
+    <div class="add-to-cart-quantity">
+      <div class="quantity-input">
+        <button class="decrease-quantity" onclick="decreaseQuantity()">-</button>
+        <input type="text" id="quantity" value="10" class="quantity">
+        <button class="increase-quantity" onclick="increaseQuantity()">+</button>
+        <button class="add-to-cart"> <img src="./img/shopping_cart.png" class="cart"> В корзину</button>
+      </div>
+    </div>
+  </div>
+  <div class="like-call">
+    <div class="like-container">
+      <img src="./img/favorite_border.png" class="heart"> <p class="like-text">В избранное</p>
+    </div>
+    <div class="call-container">
+      <button class="call"> <img src="./img/phone_in_talk.png" class="phone"> Позвонить</button>
+    </div>
+  </div>
+  <div class="contacts">
+    <p class="contacts-text">Также для вашего удобства мы доступны в мессенджерах</p>
+    <div class="contacts-img">
+      <img src="./img/WhatsApp.png" alt="">
+      <img src="./img/Viber.png" alt="">
+      <img src="./img/Telegram.png" alt="">
+    </div>
+  </div>
+</div>
+<!--End of the box-->
+
+<!--Simple script-->
+<script>
+  function decreaseQuantity() {
+    let quantity = document.getElementById("quantity");
+    if (quantity.value > 1) {
+      quantity.value--;
+    }
+  }
+  
+  function increaseQuantity() {
+    let quantity = document.getElementById("quantity");
+    quantity.value++;
+  }
+</script>
+  </body>
+</html>
